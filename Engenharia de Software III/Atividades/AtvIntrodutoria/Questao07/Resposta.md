@@ -1,0 +1,7 @@
+Temos um módulo de processamento de pedidos que depende de um banco de dados para armazenar informações sobre os produtos, clientes e pedidos. Ele utiliza um banco de dados relacional tradicional e sua implementação de processamento de pedidos interage diretamente com esse banco de dados.
+
+Se, em algum ponto, decidir migrar para um banco de dados NoSQL (por exemplo, MongoDB) devido a mudanças nos requisitos de escalabilidade ou de modelo de dados, isso pode impactar a implementação do módulo de processamento de pedidos. As consultas SQL existentes teriam que ser reformuladas para se adequarem ao modelo de dados NoSQL, e a lógica de acesso ao banco de dados teria que ser modificada.
+
+O impacto pode se estender a outros módulos que dependem do mesmo banco de dados ou que compartilham funcionalidades comuns. Se esses módulos não estiverem adequadamente desacoplados e programados para interfaces, a mudança no banco de dados pode resultar em uma cascata de alterações em vários lugares do código.
+
+Por outro lado, se você tivesse programado para interfaces e utilizado uma abstração para o acesso ao banco de dados, os módulos dependentes apenas precisariam se preocupar com a interface (métodos e operações) fornecida pela camada de persistência. A troca para um banco de dados diferente exigiria apenas a implementação de uma nova classe que atende à mesma interface, minimizando o impacto nos outros módulos.

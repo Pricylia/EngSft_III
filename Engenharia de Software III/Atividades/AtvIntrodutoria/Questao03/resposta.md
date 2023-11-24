@@ -1,0 +1,5 @@
+O SRP estabelece que uma classe deve ter apenas um motivo para mudar, ou seja, ela deve ter apenas uma responsabilidade. Isso significa que uma classe deve ter um único "foco" ou responsabilidade no sistema.
+
+O ISP, por sua vez, complementa o SRP ao nível das interfaces. Ele sugere que as interfaces devem ser específicas para um conjunto coeso de comportamentos relacionados. Em outras palavras, uma interface não deve forçar uma classe a implementar métodos que ela não utiliza. Isso evita que uma classe seja sobrecarregada com responsabilidades não relacionadas.
+
+Em conjunto, o SRP e o ISP promovem um design mais coeso e modular, onde as classes e interfaces têm responsabilidades bem definidas e não são sobrecarregadas com funcionalidades não relacionadas. Isso contribui para a flexibilidade, manutenibilidade e extensibilidade do código.

@@ -1,0 +1,1 @@
+Se aplicaria tornando o código mais flexível, permitindo a substituição fácil de repositórios sem impactar as classes de alto nível.
